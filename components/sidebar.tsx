@@ -59,7 +59,7 @@ const SideBar: React.FC<SideBarProps> = ({
     ], [pathName])
   return (
     <div className="main-container flex h-full relative">
-        <div className="desktop-nav hidden md:flex flex-col gap-y-2 bg-[black] h-full w-80 p-2">
+        <div className="desktop-nav hidden md:flex flex-col gap-y-2 bg-[black] h-full w-[24rem] p-2">
             <Box className="">
                 <div className="flex flex-col gap-y-4 px-5 py-4">
                     {routes.map((item) => (

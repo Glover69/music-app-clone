@@ -24,7 +24,7 @@ const ListItemSidebarPlaylist: React.FC<ListItemSidebarPlaylistProps> = ({
     }
 
   return (
-    <button className="flex w-full items-center rounded-lg overflow-hidden gap-x-4 bg-transparent hover:bg-[#272727] transition p-2">
+    <button onClick={onClick} className="flex w-full items-center rounded-lg overflow-hidden gap-x-4 bg-transparent hover:bg-[#272727] transition p-2">
         <div className="inner-container w-full h-full flex flex-row items-center gap-4">
             <Image
             width={50}
