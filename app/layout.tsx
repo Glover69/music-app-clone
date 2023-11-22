@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Figtree } from 'next/font/google'
 import './globals.css'
 import SideBar from '@/components/sidebar'
+import { SessionProvider } from 'next-auth/react'
+import { Session } from 'inspector'
 
 const figtree = Figtree({ subsets: ['latin'] })
 
@@ -16,6 +18,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
+    // <SessionProvider session={}>
     <html lang="en">
       <body className={figtree.className}>
         
@@ -25,5 +28,6 @@ export default function RootLayout({
         
         </body>
     </html>
+    // </SessionProvider>
   )
 }
